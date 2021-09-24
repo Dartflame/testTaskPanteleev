@@ -1,0 +1,5 @@
+book:
+  service:
+    url: http://localhost:8087
+
+
