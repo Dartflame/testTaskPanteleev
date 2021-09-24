@@ -57,7 +57,7 @@ public class CurrencyServiceImpl implements CurrencyService {
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(URI.create(url));
 
-        return new ResponseEntity<>(headers, HttpStatus.MOVED_PERMANENTLY);
+        return new ResponseEntity (gif, headers, HttpStatus.MOVED_PERMANENTLY);
     }
 
     @Override

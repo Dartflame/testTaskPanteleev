@@ -1,6 +1,7 @@
 package com.darflame.test_task;
 
 //import com.darflame.test_task.configs.WireMockConfig;
+import com.darflame.test_task.controllers.CurrencyController;
 import com.darflame.test_task.dao.CurrencyClient;
 import com.darflame.test_task.entity.Currency;
 import com.github.tomakehurst.wiremock.WireMockServer;
@@ -30,6 +31,8 @@ import java.util.List;
 import java.util.Map;
 
 import static org.springframework.test.util.AssertionErrors.assertFalse;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
 //@ActiveProfiles("test")
@@ -56,6 +59,9 @@ public class ClientIntegrationTest {
     @Autowired
     private CurrencyClient client;
 
+    @Autowired
+    private CurrencyController controller;
+
 //    @BeforeEach
 //    void setUp() throws IOException {
 //        CurrencyMock.setupMockCurResponse(mockBooksService);
@@ -72,7 +78,7 @@ public class ClientIntegrationTest {
         addCurrencyToList();
         InputStream is = new URL(todayTestUrl).openStream();
         String jsonText = new String(Streams.readAll(is));
-        
+
         Assert.assertEquals(jsonText, client.readAllCurrenciesLatest(app_id, base, list, true, false).toString());
     }
 
@@ -87,6 +93,11 @@ public class ClientIntegrationTest {
         String jsonText = new String(Streams.readAll(is));
 
         Assert.assertEquals(jsonText, client.readAllCurrenciesHistorical(yesterday, app_id, base, list, true, false).toString());
+    }
+
+    @Test
+    public void testRedirect() throws IOException {
+        Assert.assertEquals(301, controller.readAllLatest(app_id, base, list, true, false).getStatusCodeValue());
     }
 
 }

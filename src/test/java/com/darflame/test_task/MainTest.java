@@ -68,7 +68,7 @@ public class MainTest {
 
     @Test
     public void mockTest() throws Exception {
-       // ResultActions resultActions = mockMvc.perform(get("http://localhost:8080/latest.json")).andExpect(status().isOk());
+       mockMvc.perform(get("http://localhost:8080/latest.json")).andExpect(status().is3xxRedirection());
 
     }
 
