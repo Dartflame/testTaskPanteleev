@@ -26,7 +26,6 @@ public class CurrencyController {
             @RequestParam(required = false, defaultValue = "1") boolean prettyprint,
             @RequestParam(required = false, defaultValue = "1") boolean show_alternative
     ) {
-
         return service.readAllLatest(app_id, base, symbols, prettyprint, show_alternative);
     }
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gif image page</title>
+</head>
+<body>
+
+<p><B><FONT size="5">today exchange rate</FONT></B>
+    <br>
+    <text th:text="*{todayDate}"/>
+    :
+    <text th:text="*{todayRate}"/>
+</p>
+<p><B><FONT size="5">yesterday exchange rate</FONT></B>
+    <br>
+    <text th:text="*{yesterdayDate}"/>
+    :
+    <text th:text="*{yesterdayRate}"/>
+</p>
+
+<br>
+<img th:src="${gifURL}"/>
+<br>
+
+</body>
+</html>

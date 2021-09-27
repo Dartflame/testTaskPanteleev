@@ -8,6 +8,7 @@ import java.util.Map;
 
 @Data
 public class Currency {
+
     private String disclaimer;
     private String license;
     private long timestamp;

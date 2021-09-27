@@ -1,6 +1,5 @@
 package com.darflame.test_task.dao;
 
-//import com.darflame.feigntest.entity.Currency;
 import com.darflame.test_task.entity.Currency;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;

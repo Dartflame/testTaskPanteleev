@@ -53,19 +53,12 @@ public class ClientIntegrationTest {
         list.add(currency);
     }
 
-//    @Autowired
-//    private WireMockServer mockBooksService;
-
     @Autowired
     private CurrencyClient client;
 
     @Autowired
     private CurrencyController controller;
 
-//    @BeforeEach
-//    void setUp() throws IOException {
-//        CurrencyMock.setupMockCurResponse(mockBooksService);
-//    }
     @Test
     public void test1() {
         List<String> list = new ArrayList<>();
@@ -96,7 +89,7 @@ public class ClientIntegrationTest {
     }
 
     @Test
-    public void testRedirect() throws IOException {
+    public void testRedirect()  {
         Assert.assertEquals(301, controller.readAllLatest(app_id, base, list, true, false).getStatusCodeValue());
     }
 
