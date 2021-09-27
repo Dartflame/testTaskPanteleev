@@ -1,6 +1,6 @@
-package com.darflame.test_task.controllers;
+package com.dartflame.test_task.controllers;
 
-import com.darflame.test_task.services.CurrencyServiceImpl;
+import com.dartflame.test_task.services.CurrencyServiceImpl;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

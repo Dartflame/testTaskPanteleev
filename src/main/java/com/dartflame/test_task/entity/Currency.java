@@ -1,4 +1,4 @@
-package com.darflame.test_task.entity;
+package com.dartflame.test_task.entity;
 
 import lombok.Data;
 

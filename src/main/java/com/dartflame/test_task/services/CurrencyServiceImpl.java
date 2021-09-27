@@ -1,9 +1,9 @@
-package com.darflame.test_task.services;
+package com.dartflame.test_task.services;
 
-import com.darflame.test_task.dao.CurrencyClient;
-import com.darflame.test_task.dao.GiphyClient;
-import com.darflame.test_task.entity.Currency;
-import com.darflame.test_task.entity.Gif;
+import com.dartflame.test_task.dao.CurrencyClient;
+import com.dartflame.test_task.dao.GiphyClient;
+import com.dartflame.test_task.entity.Currency;
+import com.dartflame.test_task.entity.Gif;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;

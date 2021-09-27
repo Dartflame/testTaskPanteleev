@@ -1,4 +1,4 @@
-package com.darflame.test_task;
+package com.dartflame.test_task;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,6 +1,6 @@
-package com.darflame.test_task.dao;
+package com.dartflame.test_task.dao;
 
-import com.darflame.test_task.entity.Gif;
+import com.dartflame.test_task.entity.Gif;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
         import org.springframework.web.bind.annotation.RequestMethod;

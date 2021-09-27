@@ -1,38 +1,24 @@
-package com.darflame.test_task;
+package com.dartflame.test_task;
 
 //import com.darflame.test_task.configs.WireMockConfig;
-import com.darflame.test_task.controllers.CurrencyController;
-import com.darflame.test_task.dao.CurrencyClient;
-import com.darflame.test_task.entity.Currency;
-import com.github.tomakehurst.wiremock.WireMockServer;
+import com.dartflame.test_task.controllers.CurrencyController;
+import com.dartflame.test_task.dao.CurrencyClient;
 import org.bouncycastle.util.io.Streams;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.event.annotation.BeforeTestExecution;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import static org.springframework.test.util.AssertionErrors.assertFalse;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
 //@ActiveProfiles("test")

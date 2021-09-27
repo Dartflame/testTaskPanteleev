@@ -1,6 +1,6 @@
-package com.darflame.test_task.controllers;
+package com.dartflame.test_task.controllers;
 
-import com.darflame.test_task.services.CurrencyServiceImpl;
+import com.dartflame.test_task.services.CurrencyServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

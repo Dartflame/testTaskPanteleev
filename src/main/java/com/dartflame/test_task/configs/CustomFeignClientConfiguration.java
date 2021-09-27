@@ -1,4 +1,4 @@
-package com.darflame.test_task.configs;
+package com.dartflame.test_task.configs;
 
 import feign.okhttp.OkHttpClient;
 import org.springframework.context.annotation.Bean;
